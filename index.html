@@ -1,2 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Clayton</title>
+  <style>
+    :root {
+      --primary: #2f323f;
+      --secondary: #64647c;
+      --accent: #c49f3b;
+    }
 
-olá
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--primary);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Seções */
+    section {
+      min-height: 100vh;
+      padding: 6rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    p {
+      line-height: 1.6;
+      color: #ddd;
+      max-width: 900px;
+    }
+
+    /* Sobre Mim */
+    .sobre-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1000px;
+    }
+
+    .sobre-container img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 4px solid var(--accent);
+    }
+
+    @media (min-width: 768px) {
+      .sobre-container {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+
+    /* Materiais */
+    .materiais-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--secondary);
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .materiais-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Contato */
+    .contato-botoes {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .contato-botoes a {
+      padding: 1.2rem 2.5rem;
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .contato-botoes a:hover {
+      background: #b08e35;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#materiais">Materiais</a>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#contato">Entrar em Contato</a>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <h1>Olá, eu sou Clayton 👋</h1>
+    <p>
+      Desenvolvedor apaixonado por tecnologia e por transformar ideias em realidade.  
+      Tenho foco em diversas áreas da programação: desde <strong>jogos digitais</strong>, 
+      passando por <strong>softwares utilitários</strong> e <strong>bancos de dados</strong>, 
+      até aplicações criativas que unem código e design.  
+      Meu objetivo é criar experiências interativas que unam inovação, lógica e diversão.  
+    </p>
+    <p>
+      Aqui você encontrará meus principais materiais: projetos de jogos, ferramentas, vídeos de conteúdo técnico 
+      e experimentos criativos. Este portfólio é o espaço onde reúno o que venho desenvolvendo e aprendendo ao longo da minha jornada.
+    </p>
+  </section>
+
+  <!-- Sobre Mim -->
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="sobre-container">
+      <img src="foto-perfil.jpg" alt="Foto de Clayton" />
+      <p>
+        Meu nome é Clayton e sou programador com experiência em diversas linguagens como <strong>C#</strong>, <strong>Python</strong> e <strong>Java</strong>.  
+        Além de jogos digitais, também tenho vivência em desenvolvimento de sistemas, integração com bancos de dados 
+        e automações que facilitam processos do dia a dia.  
+      </p>
+    </div>
+    <p>
+      Gosto de explorar diferentes áreas da tecnologia, porque acredito que a verdadeira força do programador está 
+      na capacidade de <strong>conectar múltiplos conhecimentos</strong>.  
+      No meu portfólio, você vai encontrar desde experimentos com <strong>game design</strong>, 
+      até trabalhos em <strong>ciência de dados</strong> e <strong>ferramentas criativas</strong>.  
+      Cada projeto é uma oportunidade de aprender, crescer e aplicar a lógica da programação de forma prática.
+    </p>
+  </section>
+
+  <!-- Materiais -->
+  <section id="materiais">
+    <h2>Materiais</h2>
+    <div class="materiais-grid">
+      <div class="card">
+        <h3>Jogo 2D em Unity</h3>
+        <p>Um plataforma em C# com inventário, inimigos e progressão de fases.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Ferramenta Procedural</h3>
+        <p>Gerador de mapas em Python para jogos 2D, usando algoritmos de ruído.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Banco de Dados</h3>
+        <p>Projeto de gerenciamento de dados com SQL e integração em aplicações Java.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Canal no YouTube</h3>
+        <p>Vídeos sobre desenvolvimento de jogos, programação e dicas de carreira dev.</p>
+        <a href="#">Assistir</a>
+      </div>
+      <div class="card">
+        <h3>Posts no Instagram</h3>
+        <p>Conteúdos rápidos com dicas, curiosidades e práticas de programação.</p>
+        <a href="#">Ver Posts</a>
+      </div>
+      <div class="card">
+        <h3>Outros Projetos</h3>
+        <p>Experimentos criativos com Godot, scripts de automação e mais.</p>
+        <a href="#">Explorar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Entrar em Contato</h2>
+    <p>Se quiser acompanhar meu trabalho ou trocar uma ideia, pode me encontrar nas redes abaixo:</p>
+    <div class="contato-botoes">
+      <a href="https://instagram.com/claytuzac" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@claytuzac" target="_blank">YouTube</a>
+      <a href="https://wa.me/5515991302014" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+</body>
+</html>
