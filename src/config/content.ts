@@ -6,11 +6,11 @@
 export const site = {
   name: "Clayton",
   role: "Diretor de Marketing e Desenvolvedor",
-  githubUser: "claytuzac",
-  email: "contato@exemplo.com",
+  githubUser: "claytonzac",
+  email: "claytonroberto01@outlook.com",
   links: {
-    linkedin: "https://www.linkedin.com/in/claytuzac",
-    github: "https://github.com/claytuzac",
+    linkedin: "https://www.linkedin.com/in/claytonzac/",
+    github: "https://github.com/claytonzac",
     instagram: "https://www.instagram.com/claytuzac/",
   },
 };
