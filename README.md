@@ -59,76 +59,6 @@ public/
 
 ---
 
-# 🛠️ Executando localmente
-
-Clone o repositório
-
-```bash
-git clone git@github.com:claytonzac/claytonzac.github.io.git
-```
-
-Entre na pasta
-
-```bash
-cd claytonzac.github.io
-```
-
-Instale as dependências
-
-```bash
-npm install
-```
-
-Execute o projeto
-
-```bash
-npm run dev
-```
-
-Abra no navegador
-
-```
-http://localhost:8080
-```
-
----
-
-# 📦 Build
-
-Gerar versão de produção
-
-```bash
-npm run build
-```
-
-Visualizar a versão de produção
-
-```bash
-npm run preview
-```
-
----
-
-# 🚀 Deploy
-
-O deploy é realizado automaticamente através do **GitHub Actions**.
-
-Sempre que alterações forem enviadas para a branch **main**, o GitHub:
-
-1. Instala as dependências;
-2. Gera o build do projeto;
-3. Publica automaticamente no GitHub Pages.
-
-Para publicar novas alterações basta executar:
-
-```bash
-git add .
-git commit -m "Descrição da alteração"
-git push
-```
-
----
-
 # 👨‍💻 Sobre mim
 
 Sou Diretor de Marketing e Desenvolvedor de Software, atuando na interseção entre tecnologia, estratégia e inovação.
@@ -155,9 +85,10 @@ Meu objetivo é desenvolver soluções que unam tecnologia e estratégia para ge
 
 # 📫 Contato
 
-- LinkedIn: https://www.linkedin.com/in/seu-perfil
+- LinkedIn: https://www.linkedin.com/in/claytonzac/
 - GitHub: https://github.com/claytonzac
 - Portfólio: https://claytonzac.github.io/
+- Twitch: https://www.twitch.tv/claytuzac
 
 ---
 
