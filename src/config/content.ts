@@ -5,7 +5,7 @@
 
 export const site = {
   name: "Clayton",
-  role: "Diretor de Marketing e Desenvolvedor",
+  role: "Desenvolvedor de Software | C# • .NET • TypeScript",
   githubUser: "claytonzac",
   email: "claytonroberto01@outlook.com",
   links: {
@@ -16,65 +16,67 @@ export const site = {
 };
 
 export const specialties = [
-  "Marketing Digital",
-  "Desenvolvimento C#",
-  "Desenvolvimento Web",
+  "Desenvolvimento C# e .NET",
+  "APIs e aplicações web",
+  "TypeScript e JavaScript",
+  "Cyber Security e AppSec",
+  "Linux e redes",
+  "Docker e infraestrutura",
+  "Banco de Dados",
   "Automações",
   "Inteligência Artificial",
-  "Docker",
-  "Linux",
-  "Servidores",
-  "Banco de Dados",
-  "UX/UI",
+  "Git e GitHub",
+  "Análise técnica",
   "Gestão de Projetos",
-  "Cyber Security",
 ];
 
 export const stats = [
   { value: 20, suffix: "+", label: "Projetos Desenvolvidos" },
-  { value: 100, suffix: "%", label: "Aprendizado Contínuo" },
-  { value: 24, suffix: "+", label: "Tecnologias Dominadas" },
-  { value: 6, suffix: "", label: "Áreas de Atuação" },
+  { value: 4, suffix: "", label: "Frentes Técnicas Principais" },
+  { value: 3, suffix: "", label: "Ecossistemas de Desenvolvimento" },
+  { value: 1, suffix: "", label: "Foco: Software Seguro" },
 ];
 
 export const areas = [
   {
-    icon: "megaphone",
-    title: "Marketing",
-    items: ["Branding", "Estratégia", "SEO", "Copywriting", "Funil", "Automação"],
-  },
-  {
     icon: "code",
-    title: "Desenvolvimento",
-    items: ["C#", ".NET", "ASP.NET", "APIs", "JavaScript", "HTML & CSS"],
-  },
-  {
-    icon: "server",
-    title: "Infraestrutura",
-    items: ["Linux", "Docker", "Portainer", "Servidores", "Git", "GitHub"],
-  },
-  {
-    icon: "brain",
-    title: "Inteligência Artificial",
-    items: ["IA aplicada", "Automações", "Agentes Inteligentes", "LLMs", "Integrações"],
+    title: "Desenvolvimento de Software",
+    items: ["C#", ".NET", "ASP.NET", "APIs REST", "TypeScript", "JavaScript"],
   },
   {
     icon: "shield",
     title: "Cyber Security",
-    items: ["Segurança", "Pentest", "Redes", "Investigação Digital", "Hardening"],
+    items: ["AppSec", "Redes", "Hardening", "Pentest em Labs", "OWASP", "Investigação Digital"],
+  },
+  {
+    icon: "server",
+    title: "Infraestrutura & DevOps",
+    items: ["Linux", "Docker", "Portainer", "Servidores", "Git", "GitHub Actions"],
+  },
+  {
+    icon: "brain",
+    title: "Automação & IA",
+    items: ["Python", "APIs", "Webhooks", "LLMs", "Agentes", "Integrações"],
   },
   {
     icon: "kanban",
-    title: "Gestão de Projetos",
-    items: ["Escopo", "Roadmap", "Métricas", "Times", "Processos", "Entrega"],
+    title: "Engenharia & Projetos",
+    items: ["Arquitetura", "Roadmap", "Documentação", "Processos", "Métricas", "Entrega"],
+  },
+  {
+    icon: "megaphone",
+    title: "Produto & Estratégia",
+    items: ["Visão de negócio", "UX", "SEO técnico", "Comunicação", "Métricas", "Marketing"],
   },
 ] as const;
 
 export const techStack = [
   "C#",
   ".NET",
-  "JavaScript",
   "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "Python",
   "HTML",
   "CSS",
   "Git",
@@ -93,46 +95,44 @@ export const techStack = [
   "Illustrator",
   "VS Code",
   "Visual Studio",
-  "Node.js",
-  "Python",
 ];
 
 export const projects = [
   {
     title: "Sistema de Gestão",
-    description: "ERP modular em C# com controle de estoque, financeiro e relatórios gerenciais.",
+    description: "Aplicação modular em C# e .NET com persistência em SQL Server, regras de negócio e organização por responsabilidades.",
     tech: ["C#", ".NET", "SQL Server"],
     github: "#",
     demo: "#",
     accent: "gold" as const,
   },
   {
-    title: "Landing Pages de Alta Conversão",
-    description: "Páginas rápidas e otimizadas para SEO, integradas a funis de marketing.",
-    tech: ["React", "Tailwind", "SEO"],
-    github: "#",
-    demo: "#",
+    title: "Portfólio em React + TypeScript",
+    description: "Portfólio responsivo com Vite, Tailwind, animações e CI/CD para publicação automática no GitHub Pages.",
+    tech: ["React", "TypeScript", "GitHub Actions"],
+    github: "https://github.com/claytonzac/claytonzac.github.io",
+    demo: "https://claytonzac.github.io/",
     accent: "violet" as const,
   },
   {
-    title: "Automação Empresarial",
-    description: "Rotinas que eliminam tarefas manuais e integram sistemas via APIs.",
+    title: "Automação de Processos",
+    description: "Integrações e rotinas para reduzir trabalho manual, conectar serviços e padronizar fluxos por APIs e webhooks.",
     tech: ["Python", "APIs", "Webhooks"],
     github: "#",
     demo: "#",
     accent: "gold" as const,
   },
   {
-    title: "IA para Empresas",
-    description: "Agentes inteligentes com LLMs para atendimento, vendas e análise de dados.",
-    tech: ["LLMs", "Node.js", "Vector DB"],
+    title: "Laboratório de Cyber Security",
+    description: "Ambiente de estudos com Linux, redes, aplicações vulneráveis e análise prática de segurança em ambiente controlado.",
+    tech: ["Linux", "Docker", "OWASP"],
     github: "#",
     demo: "#",
     accent: "violet" as const,
   },
   {
     title: "Dashboard Administrativo",
-    description: "Painel de indicadores em tempo real com visualizações e permissões por perfil.",
+    description: "Interface web orientada a dados com React e TypeScript, componentes reutilizáveis e integração com banco de dados.",
     tech: ["TypeScript", "React", "PostgreSQL"],
     github: "#",
     demo: "#",
@@ -140,16 +140,16 @@ export const projects = [
   },
   {
     title: "Infraestrutura em Docker",
-    description: "Ambientes conteinerizados com Portainer, proxy reverso e deploy automatizado.",
+    description: "Serviços conteinerizados em Linux com Portainer, segmentação por containers e organização de ambientes de desenvolvimento.",
     tech: ["Docker", "Linux", "Portainer"],
     github: "#",
     demo: "#",
     accent: "violet" as const,
   },
   {
-    title: "Projeto Godot",
-    description: "Jogo 2D com inventário, inimigos e progressão de fases desenvolvido em C#.",
-    tech: ["Godot", "C#", "Game Design"],
+    title: "Projeto Godot com C#",
+    description: "Projeto de game development usado para aplicar orientação a objetos, lógica de gameplay e integração entre C# e Godot.",
+    tech: ["Godot", "C#", "OOP"],
     github: "#",
     demo: "#",
     accent: "gold" as const,
@@ -158,36 +158,36 @@ export const projects = [
 
 export const timeline = [
   {
-    title: "Marketing",
-    description: "Início na estratégia de marca, performance e comunicação orientada a dados.",
+    title: "Fundamentos de Programação",
+    description: "Consolidação de lógica, orientação a objetos e desenvolvimento de aplicações com foco em C# e ecossistema .NET.",
   },
   {
-    title: "Programação",
-    description: "Migração para o desenvolvimento de software com C#, .NET e aplicações web.",
+    title: "Desenvolvimento Web",
+    description: "Expansão para aplicações web, APIs, TypeScript, JavaScript e integração com bancos de dados.",
   },
   {
-    title: "Infraestrutura",
-    description: "Servidores Linux, Docker e ambientes de deploy próprios para os projetos.",
-  },
-  {
-    title: "Inteligência Artificial",
-    description: "Automações inteligentes e agentes com LLMs aplicados a processos reais.",
+    title: "Linux & Infraestrutura",
+    description: "Administração de ambientes Linux, Docker, serviços próprios e automação de deploy e desenvolvimento.",
   },
   {
     title: "Cyber Security",
-    description: "Segurança de redes, hardening e investigação digital como camada essencial.",
+    description: "Estudos práticos de redes, hardening, análise de aplicações e segurança ofensiva em laboratórios controlados.",
   },
   {
-    title: "Gestão Estratégica",
-    description: "Liderança de projetos conectando tecnologia, negócio e resultado.",
+    title: "Automação & Inteligência Artificial",
+    description: "Uso de APIs, scripts, LLMs e agentes para automatizar processos e ampliar capacidades de sistemas.",
+  },
+  {
+    title: "Engenharia com Visão de Produto",
+    description: "Integração entre desenvolvimento, segurança, infraestrutura e contexto de negócio para construir soluções mais completas.",
   },
 ];
 
 export const strengths = [
-  { icon: "brain", title: "Pensamento Analítico", text: "Diagnóstico de problemas complexos com base em dados." },
-  { icon: "messages", title: "Comunicação", text: "Tradução entre o técnico e o estratégico com clareza." },
-  { icon: "compass", title: "Liderança", text: "Direção de times e projetos com foco em entrega." },
-  { icon: "sparkles", title: "Criatividade", text: "Soluções originais que unem design e engenharia." },
-  { icon: "puzzle", title: "Resolução de Problemas", text: "Do gargalho ao processo automatizado." },
-  { icon: "trending", title: "Aprendizado Contínuo", text: "Estudo constante de novas stacks e tendências." },
+  { icon: "brain", title: "Pensamento Analítico", text: "Investigo causas, dependências e riscos antes de propor uma solução." },
+  { icon: "messages", title: "Comunicação Técnica", text: "Explico decisões, limitações e trade-offs de forma clara para públicos técnicos e não técnicos." },
+  { icon: "compass", title: "Visão de Arquitetura", text: "Penso a aplicação como conjunto de código, dados, infraestrutura, segurança e operação." },
+  { icon: "sparkles", title: "Automação", text: "Procuro transformar tarefas repetitivas em fluxos previsíveis, rastreáveis e reaproveitáveis." },
+  { icon: "puzzle", title: "Resolução de Problemas", text: "Do gargalo à implementação, com foco em diagnóstico, teste e melhoria contínua." },
+  { icon: "trending", title: "Aprendizado Contínuo", text: "Aprofundo desenvolvimento, Linux, redes e segurança por documentação, projetos e laboratórios." },
 ] as const;

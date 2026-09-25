@@ -17,8 +17,8 @@ const Areas = () => (
     <div className="container">
       <SectionHeading
         eyebrow="Áreas de atuação"
-        title="Seis frentes, um mesmo objetivo"
-        description="Cada área se conecta às outras para entregar soluções completas — da estratégia ao servidor em produção."
+        title="Engenharia de ponta a ponta"
+        description="Desenvolvimento, segurança e infraestrutura como núcleo; automação, IA e visão de produto como camadas complementares."
       />
 
       <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

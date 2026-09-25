@@ -1,18 +1,14 @@
-# 💼 Portfólio Profissional
+# Portfólio Profissional — Clayton
 
-Bem-vindo ao repositório do meu portfólio.
+Portfólio pessoal voltado a **Desenvolvimento de Software**, **Cyber Security**, **Linux**, **Infraestrutura**, **Automação** e **Inteligência Artificial**.
 
-Este projeto foi desenvolvido para apresentar minhas principais competências, experiências e projetos nas áreas de **Marketing**, **Desenvolvimento de Software**, **Inteligência Artificial**, **Infraestrutura**, **Automação** e **Cyber Security**.
+O projeto apresenta minha stack, projetos, trajetória técnica e atividade pública no GitHub, com foco principal em **C#**, **.NET** e **TypeScript**.
 
-## 🌐 Acesse
+## Website
 
-**Website:** https://claytonzac.github.io/
+https://claytonzac.github.io/
 
----
-
-# 🚀 Tecnologias
-
-Este projeto foi desenvolvido utilizando tecnologias modernas do ecossistema Front-end.
+## Tecnologias do projeto
 
 - React
 - TypeScript
@@ -21,77 +17,110 @@ Este projeto foi desenvolvido utilizando tecnologias modernas do ecossistema Fro
 - Framer Motion
 - Lucide React
 - React Query
+- Zod
+- GitHub API
 - GitHub Actions
 - GitHub Pages
 
----
+## Foco profissional
 
-# 📂 Estrutura
+Atuo principalmente com desenvolvimento de software e venho aprofundando segurança de aplicações, redes e infraestrutura.
 
-```
-src/
- ├── components/
- ├── pages/
- ├── hooks/
- ├── lib/
- ├── assets/
- └── App.tsx
+### Desenvolvimento
 
-public/
-
-.github/
- └── workflows/
-      deploy.yml
-```
-
----
-
-# ✨ Funcionalidades
-
-- Portfólio totalmente responsivo
-- Interface moderna em Dark Mode
-- Animações suaves
-- Apresentação de habilidades
-- Exibição de projetos
-- Integração com GitHub
-- SEO otimizado
-- Deploy automático pelo GitHub Actions
-
----
-
-# 👨‍💻 Sobre mim
-
-Sou Diretor de Marketing e Desenvolvedor de Software, atuando na interseção entre tecnologia, estratégia e inovação.
-
-Tenho experiência em:
-
-- Marketing Digital
-- Desenvolvimento Web
 - C#
 - .NET
-- Inteligência Artificial
-- Docker
+- ASP.NET
+- TypeScript
+- JavaScript
+- APIs REST
+- Bancos de dados relacionais
+
+### Cyber Security
+
+- Application Security
+- Redes
+- Hardening
+- OWASP
 - Linux
-- APIs
-- Automações
-- Banco de Dados
-- UX/UI
-- Cyber Security
-- Gestão de Projetos
+- Laboratórios de Pentest
+- Investigação Digital
 
-Meu objetivo é desenvolver soluções que unam tecnologia e estratégia para gerar resultados reais.
+### Infraestrutura e automação
 
----
+- Docker
+- Portainer
+- Git / GitHub
+- GitHub Actions
+- Linux
+- Python
+- APIs e Webhooks
+- LLMs e agentes
 
-# 📫 Contato
+> Segurança ofensiva é apresentada no portfólio como área de estudo e prática em laboratórios controlados, sem confundir aprendizado técnico com experiência profissional formal.
 
-- LinkedIn: https://www.linkedin.com/in/claytonzac/
+## Estrutura
+
+```text
+src/
+├── assets/
+├── components/
+├── config/
+├── hooks/
+├── lib/
+├── pages/
+├── App.tsx
+├── index.css
+└── main.tsx
+
+public/
+├── robots.txt
+└── sitemap.xml
+
+.github/
+└── workflows/
+    └── deploy.yml
+```
+
+## Executar localmente
+
+```bash
+git clone git@github.com:claytonzac/claytonzac.github.io.git
+cd claytonzac.github.io
+npm install
+npm run dev
+```
+
+Servidor de desenvolvimento:
+
+```text
+http://localhost:8080
+```
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Para validar o build localmente:
+
+```bash
+npm run preview
+```
+
+## Deploy
+
+O deploy é executado automaticamente pelo GitHub Actions quando há um novo push para a branch `main`.
+
+Fluxo:
+
+```text
+Push → GitHub Actions → npm ci → npm run build → GitHub Pages
+```
+
+## Contato
+
 - GitHub: https://github.com/claytonzac
+- LinkedIn: https://www.linkedin.com/in/claytonzac/
 - Portfólio: https://claytonzac.github.io/
-- Twitch: https://www.twitch.tv/claytuzac
-
----
-
-## 📄 Licença
-
-Este projeto é de uso pessoal e serve como demonstração das minhas habilidades técnicas e profissionais.

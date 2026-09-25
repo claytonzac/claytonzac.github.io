@@ -48,8 +48,8 @@ const Contact = () => {
       <div className="container">
         <SectionHeading
           eyebrow="Contato"
-          title="Vamos construir algo juntos"
-          description="Conte o desafio — respondo com um caminho técnico e estratégico."
+          title="Desenvolvimento, segurança ou automação"
+          description="Se existe um problema técnico para resolver, uma aplicação para construir ou um ambiente para organizar, podemos conversar."
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
@@ -96,7 +96,7 @@ const Contact = () => {
                   id="message"
                   rows={5}
                   className={`${field} resize-none`}
-                  placeholder="Descreva seu projeto ou desafio"
+                  placeholder="Descreva seu projeto, vaga ou desafio técnico"
                   maxLength={1000}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}

@@ -19,7 +19,7 @@ const Hero = () => {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-4 py-1.5 text-xs font-medium tracking-wide text-muted-foreground"
           >
             <Sparkles className="h-3.5 w-3.5 text-primary" />
-            Diretor de Marketing e Desenvolvedor
+            Desenvolvedor de Software · Cyber Security
           </motion.span>
 
           <motion.h1
@@ -28,9 +28,9 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.08 }}
             className="mt-7 text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Marketing. <span className="text-gradient">Desenvolvimento.</span>
+            Código. <span className="text-gradient">Segurança.</span>
             <br />
-            Inteligência.
+            Infraestrutura.
           </motion.h1>
 
           <motion.p
@@ -39,7 +39,8 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.16 }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground"
           >
-            Transformo ideias em soluções digitais através da tecnologia, estratégia e automação.
+            Desenvolvo aplicações e automações com foco em C#, .NET e TypeScript, integrando Linux,
+            infraestrutura e segurança desde a concepção até o deploy.
           </motion.p>
 
           <motion.div
@@ -74,7 +75,7 @@ const Hero = () => {
           <div className="absolute inset-8 -z-10 rounded-full bg-accent/30 blur-3xl animate-pulse-glow" aria-hidden />
           <img
             src={heroArt}
-            alt="Ilustração abstrata com código, dashboards de marketing, inteligência artificial, servidores e segurança"
+            alt="Ilustração abstrata com código, infraestrutura, automação e segurança"
             width={1024}
             height={1024}
             className="w-full animate-float drop-shadow-2xl"

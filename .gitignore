@@ -1,5 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+
+# Environment
+.env
+.env.local
+*.local
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,24 +19,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# TypeScript
+*.tsbuildinfo
 
-# Editor directories and files
+# Workspace
+.workspace/
+
+# Editors
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+
+# OS
 .DS_Store
+
+# IDE / Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-node_modules/
-dist/
-.workspace/
-*.tsbuildinfo
-.env
-.env.local

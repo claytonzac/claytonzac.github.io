@@ -6,73 +6,48 @@
 
 @layer base {
   :root {
-    /* #161616 */
     --background: 0 0% 9%;
     --foreground: 0 0% 98%;
-
     --surface: 0 0% 11%;
     --surface-2: 0 0% 14%;
-
     --card: 0 0% 11%;
     --card-foreground: 0 0% 98%;
-
     --popover: 0 0% 11%;
     --popover-foreground: 0 0% 98%;
-
-    /* #FFD54A */
     --primary: 45 100% 64%;
     --primary-foreground: 0 0% 9%;
-
     --secondary: 0 0% 14%;
     --secondary-foreground: 0 0% 92%;
-
     --muted: 0 0% 16%;
     --muted-foreground: 0 0% 64%;
-
-    /* #5E4B8B */
     --accent: 261 30% 42%;
     --accent-foreground: 0 0% 98%;
-
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-
     --border: 0 0% 18%;
     --input: 0 0% 18%;
     --ring: 45 100% 64%;
-
     --radius: 1rem;
-
     --gradient-hero: radial-gradient(60% 60% at 20% 10%, hsl(261 30% 42% / 0.35), transparent 70%),
       radial-gradient(50% 50% at 85% 20%, hsl(45 100% 64% / 0.14), transparent 70%);
     --gradient-gold: linear-gradient(100deg, hsl(45 100% 64%), hsl(38 90% 58%));
     --gradient-mixed: linear-gradient(120deg, hsl(45 100% 64%), hsl(261 40% 60%));
     --gradient-card: linear-gradient(160deg, hsl(0 0% 14% / 0.9), hsl(0 0% 10% / 0.9));
-
     --shadow-glow: 0 0 60px -12px hsl(45 100% 64% / 0.35);
     --shadow-violet: 0 24px 60px -24px hsl(261 30% 42% / 0.7);
     --shadow-elevated: 0 24px 60px -30px hsl(0 0% 0% / 0.9);
-
     --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "Sora", "Inter", system-ui, sans-serif;
   }
-
-  ::selection {
-    background: hsl(var(--primary) / 0.25);
-  }
+  ::selection { background: hsl(var(--primary) / 0.25); }
 }
 
 @layer components {
@@ -80,22 +55,17 @@
     @apply rounded-2xl border border-border/80 bg-card/70 backdrop-blur-sm;
     box-shadow: var(--shadow-elevated);
   }
-
   .text-gradient {
     background: var(--gradient-mixed);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
-
   .grid-lines {
     background-image: linear-gradient(hsl(var(--border) / 0.5) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--border) / 0.5) 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: radial-gradient(70% 60% at 50% 0%, black, transparent 85%);
   }
-
-  .section-padding {
-    @apply px-6 py-24 md:px-10 md:py-32;
-  }
+  .section-padding { @apply px-6 py-24 md:px-10 md:py-32; }
 }

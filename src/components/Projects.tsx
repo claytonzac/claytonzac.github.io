@@ -8,8 +8,8 @@ const Projects = () => (
     <div className="container">
       <SectionHeading
         eyebrow="Projetos"
-        title="Soluções construídas na prática"
-        description="Uma seleção de sistemas, automações e experimentos — novos projetos são adicionados continuamente."
+        title="Código, infraestrutura e segurança na prática"
+        description="Projetos e laboratórios que demonstram desenvolvimento, automação, deploy e evolução técnica contínua."
       />
 
       <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -53,6 +53,7 @@ const Projects = () => (
                   href={p.github}
                   target={p.github.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
+                  aria-disabled={p.github === "#"}
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-border px-3 py-2.5 text-xs font-medium transition-colors hover:border-primary/50 hover:text-primary"
                 >
                   <Github className="h-3.5 w-3.5" /> GitHub
@@ -61,6 +62,7 @@ const Projects = () => (
                   href={p.demo}
                   target={p.demo.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
+                  aria-disabled={p.demo === "#"}
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/90 px-3 py-2.5 text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary"
                 >
                   <ExternalLink className="h-3.5 w-3.5" /> Demo

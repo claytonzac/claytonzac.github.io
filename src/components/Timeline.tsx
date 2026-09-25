@@ -6,9 +6,9 @@ const Timeline = () => (
   <section id="trajetoria" className="section-padding border-y border-border/70 bg-surface/40">
     <div className="container">
       <SectionHeading
-        eyebrow="Linha do tempo"
-        title="Uma evolução em camadas"
-        description="Cada etapa somou uma nova competência, sem abandonar as anteriores."
+        eyebrow="Evolução técnica"
+        title="Do código à segurança"
+        description="Uma trajetória construída por camadas: programação, web, infraestrutura, segurança e automação."
       />
 
       <ol className="relative mx-auto mt-16 max-w-3xl border-l border-border pl-8 md:pl-12">

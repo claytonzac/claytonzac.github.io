@@ -65,8 +65,8 @@ const TechStack = () => (
     <div className="container">
       <SectionHeading
         eyebrow="Stack tecnológica"
-        title="Ferramentas do dia a dia"
-        description="Da linguagem ao deploy, passando por design e banco de dados."
+        title="Ferramentas para construir, integrar e proteger"
+        description="Linguagens, bancos, infraestrutura e ferramentas que uso em desenvolvimento e laboratórios técnicos."
       />
 
       <div className="mt-16 grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">

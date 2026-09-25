@@ -6,7 +6,7 @@ const Footer = () => (
       <p>
         © {new Date().getFullYear()} {site.name}. Todos os direitos reservados.
       </p>
-      <p>Marketing · Desenvolvimento · Inteligência</p>
+      <p>Desenvolvimento · Cyber Security · Infraestrutura</p>
     </div>
   </footer>
 );
